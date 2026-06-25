@@ -1,0 +1,38 @@
+{
+  "accounts": [
+    {
+      "name": "Dawn Quigley-Dickinson",
+      "email": "sabina_dooleypollich@msn.com",
+      "password": "@b*2%yS!fP5g8x",
+      "orgName": "McDermott, VonRueden and Morissette",
+      "licenses": [
+        {
+          "licenseKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlSWQiOiI0NDY2OTE4YS1lNTdkLTQ1YzgtYmEzZS1jY2JhMzg4NjcxZDUiLCJsaWNlbnNlVHlwZSI6ImVudGVycHJpc2UiLCJzZWF0cyI6MTAwMCwidHJpYWwiOnRydWUsImxpZmV0aW1lIjpmYWxzZSwiaXNzdWVkQXQiOiIyMDI2LTA2LTI1VDIyOjM2OjQ3LjU0OFoiLCJleHBpcmVzQXQiOiIyMDI2LTA4LTI0VDIyOjM2OjQ3LjU0OFoiLCJjdXN0b21lciI6eyJpZCI6Ijk2Y2Y0ZjZiLTcwYTQtNGMyYS1hMTkzLTMyNzExMDViZjBkMyIsIm5hbWUiOiJNY0Rlcm1vdHQsIFZvblJ1ZWRlbiBhbmQgTW9yaXNzZXR0ZSIsImVtYWlsIjoic2FiaW5hX2Rvb2xleXBvbGxpY2hAbXNuLmNvbSJ9LCJ2ZXJzaW9uIjoiMSIsImV4cCI6MTc4NzYxMTAwNywiaWF0IjoxNzgyNDI3MDA3LCJpc3MiOiJkb2Ntb3N0LmNvbSJ9.6V_5JQqCyQYn7ygsNZKh3cyufqUZnxoxuA57BKLJLbMJyx3hP_fuiiFN8E4Ue3KoXhPzsIiptnEL3IX_elcuFXBnspcifqiR5ThsITBS1Y-S6kMIXinaB9Qph-5I1gJyMy_LQzIyZENP5YCto0PnaPnOweTRInalqxfmjJZpxD_wafykkqCZzxJR0YlnCbQhsHh_8zFiaDbW8XgiMW9jkc145zm6WF8aWR6_8pv6dtySRNcL_hPGxz0VmEKqVIqdO3_USNVBIJQRHmvRbIpFYQldMj6MeOSmxhz7lPRwcAzFYsEy3-cz9X1on1GaKXHxZ-n7_sT6F5LOvxjRXJSQ7g",
+          "edition": "enterprise",
+          "status": "active",
+          "expiresAt": "2026-08-24T22:36:47.548Z",
+          "issuedAt": "2026-06-25T22:36:47.548Z",
+          "trial": true
+        },
+        {
+          "licenseKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlSWQiOiIyYmU4NTU2Mi0wYTdlLTRiZDItYjEzMi1iMThiZmVjZDQ1MzAiLCJsaWNlbnNlVHlwZSI6ImVudGVycHJpc2UiLCJzZWF0cyI6MTAwMCwidHJpYWwiOnRydWUsImxpZmV0aW1lIjpmYWxzZSwiaXNzdWVkQXQiOiIyMDI2LTA2LTI1VDIyOjEyOjA5LjA5NVoiLCJleHBpcmVzQXQiOiIyMDI2LTA4LTI0VDIyOjEyOjA5LjA5NVoiLCJjdXN0b21lciI6eyJpZCI6IjZiYzNiZTllLTI3YjItNDk4YS1hNDNmLTIyZTQ1ZWY4NjM1YSIsIm5hbWUiOiJNY0Rlcm1vdHQsIFZvblJ1ZWRlbiBhbmQgTW9yaXNzZXR0ZSIsImVtYWlsIjoic2FiaW5hX2Rvb2xleXBvbGxpY2hAbXNuLmNvbSJ9LCJ2ZXJzaW9uIjoiMSIsImV4cCI6MTc4NzYwOTUyOSwiaWF0IjoxNzgyNDI1NTI5LCJpc3MiOiJkb2Ntb3N0LmNvbSJ9.wW3kQ9dE4mm7SBkXBFL4pBfubqJk5zLBf_bVjUBCEty0e01Ud3hoYK4ntyCWMjNszW8SuMUj4LOGLfcw--WytXYgC1_PxnRB-NYp1TWEukAYIqm1_ELS_n_J8nfG4llrFLTivULlF9SGgo_hIxgaQLblDq3W5D5389Lg8Vm8RlPuZIWX8CAFCSLADc6ueDBuC_2YyjY3S93SHfBWvHYjXu4GXMMRBTmjnLcEAq3DmZG0pMrSs8Xv4yAA31SKmlmlzYUJSQ2YX4Ep5uIWSjEajb7JZd-QW4VX8mgqf-cNlJs51_PfoEZkliMfx9zZB4l39u4R09OwCoGGyQA0SFFBRg",
+          "edition": "enterprise",
+          "status": "active",
+          "expiresAt": "2026-08-24T22:12:09.095Z",
+          "issuedAt": "2026-06-25T22:12:09.095Z",
+          "trial": true
+        }
+      ],
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMTlmMDBkNy0yOGJmLTcxZjQtYTg1ZC0yZTAxYjQyNDIzOWYiLCJlbWFpbCI6InNhYmluYV9kb29sZXlwb2xsaWNoQG1zbi5jb20iLCJpYXQiOjE3ODI0MjY2MjQsImV4cCI6MTc4NTAxODYyNCwiaXNzIjoiRG9jbW9zdCJ9.r15zL4CuoTZ5oUzioZ2K_gPudDXf_cXWM-IksEYuFA4",
+      "orgId": "019f00d7-28c2-7c7b-8601-e71593d35bd2"
+    }
+  ],
+  "activeLicense": {
+    "licenseKey": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJsaWNlbnNlSWQiOiI0NDY2OTE4YS1lNTdkLTQ1YzgtYmEzZS1jY2JhMzg4NjcxZDUiLCJsaWNlbnNlVHlwZSI6ImVudGVycHJpc2UiLCJzZWF0cyI6MTAwMCwidHJpYWwiOnRydWUsImxpZmV0aW1lIjpmYWxzZSwiaXNzdWVkQXQiOiIyMDI2LTA2LTI1VDIyOjM2OjQ3LjU0OFoiLCJleHBpcmVzQXQiOiIyMDI2LTA4LTI0VDIyOjM2OjQ3LjU0OFoiLCJjdXN0b21lciI6eyJpZCI6Ijk2Y2Y0ZjZiLTcwYTQtNGMyYS1hMTkzLTMyNzExMDViZjBkMyIsIm5hbWUiOiJNY0Rlcm1vdHQsIFZvblJ1ZWRlbiBhbmQgTW9yaXNzZXR0ZSIsImVtYWlsIjoic2FiaW5hX2Rvb2xleXBvbGxpY2hAbXNuLmNvbSJ9LCJ2ZXJzaW9uIjoiMSIsImV4cCI6MTc4NzYxMTAwNywiaWF0IjoxNzgyNDI3MDA3LCJpc3MiOiJkb2Ntb3N0LmNvbSJ9.6V_5JQqCyQYn7ygsNZKh3cyufqUZnxoxuA57BKLJLbMJyx3hP_fuiiFN8E4Ue3KoXhPzsIiptnEL3IX_elcuFXBnspcifqiR5ThsITBS1Y-S6kMIXinaB9Qph-5I1gJyMy_LQzIyZENP5YCto0PnaPnOweTRInalqxfmjJZpxD_wafykkqCZzxJR0YlnCbQhsHh_8zFiaDbW8XgiMW9jkc145zm6WF8aWR6_8pv6dtySRNcL_hPGxz0VmEKqVIqdO3_USNVBIJQRHmvRbIpFYQldMj6MeOSmxhz7lPRwcAzFYsEy3-cz9X1on1GaKXHxZ-n7_sT6F5LOvxjRXJSQ7g",
+    "edition": "enterprise",
+    "expiresAt": "2026-08-24T22:36:47.548Z",
+    "issuedAt": "2026-06-25T22:36:47.548Z",
+    "activatedAt": "2026-06-25T22:39:17.178Z",
+    "accountEmail": "sabina_dooleypollich@msn.com"
+  }
+}
