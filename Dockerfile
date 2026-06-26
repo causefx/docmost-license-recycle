@@ -16,14 +16,6 @@ WORKDIR /app
 ENV NODE_ENV=production
 ENV ACCOUNTS_FILE=/data/accounts.json
 
-# Install supercronic (container-native cron, picks correct arch automatically)
-ARG SUPERCRONIC_VERSION=v0.2.33
-ARG TARGETARCH=amd64
-RUN wget -q \
-    "https://github.com/aptible/supercronic/releases/download/${SUPERCRONIC_VERSION}/supercronic-linux-${TARGETARCH}" \
-    -O /usr/local/bin/supercronic \
-    && chmod +x /usr/local/bin/supercronic
-
 COPY package.json ./
 RUN npm install --omit=dev
 
