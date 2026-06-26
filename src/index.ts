@@ -241,7 +241,12 @@ async function main(): Promise<void> {
   if (reusable) {
     console.log(`\nFound existing valid license from ${reusable.accountEmail} (expires ${reusable.expiresAt})`);
     console.log(`Activating on ${env.DOCMOST_LOCAL_URL}...`);
-    await activateLicense(env.DOCMOST_LOCAL_URL, env.DOCMOST_API_KEY, reusable.licenseKey);
+    try {
+      await activateLicense(env.DOCMOST_LOCAL_URL, env.DOCMOST_API_KEY, reusable.licenseKey);
+    } catch (err) {
+      console.error(`  Activation failed: ${err instanceof Error ? err.message : err}`);
+      console.warn("  Will retry on next run.");
+    }
 
     file.activeLicense = {
       ...(file.activeLicense ?? {}),
@@ -272,7 +277,12 @@ async function main(): Promise<void> {
 
   // 6. Activate on local instance
   console.log(`Activating on ${env.DOCMOST_LOCAL_URL}...`);
-  await activateLicense(env.DOCMOST_LOCAL_URL, env.DOCMOST_API_KEY, newLicense.licenseKey);
+  try {
+    await activateLicense(env.DOCMOST_LOCAL_URL, env.DOCMOST_API_KEY, newLicense.licenseKey);
+  } catch (err) {
+    console.error(`  Activation failed: ${err instanceof Error ? err.message : err}`);
+    console.warn("  License was created remotely and saved to accounts.json — activation will be retried on next run.");
+  }
 
   // 7. Persist to accounts.json
   if (isNew) file.accounts.push(account);

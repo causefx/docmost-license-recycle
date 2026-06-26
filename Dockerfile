@@ -29,7 +29,8 @@ RUN npm install --omit=dev
 
 COPY --from=builder /app/dist ./dist
 COPY entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY run.sh /app/run.sh
+RUN chmod +x /entrypoint.sh /app/run.sh
 
 # Mount a volume here to persist accounts.json between runs:
 #   docker run -v $(pwd)/data:/data --env-file .env docmost-license-recycle
