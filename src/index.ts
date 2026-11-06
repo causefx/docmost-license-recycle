@@ -3,7 +3,7 @@ import { loadEnv, Env } from "./env";
 import { loadAccountsFile, saveAccountsFile } from "./accounts";
 import { register, login, getMe, isTokenValid } from "./auth";
 import { getTrialSettings, getLicenses, getOrganization, createTrialLicense } from "./licenses";
-import { activateLicense, getLicenseInfo } from "./activate";
+import { activateLicense, checkApiKey, getLicenseInfo } from "./activate";
 import { generateEmail, generateName, generateOrgName, generatePassword } from "./generator";
 import { Account, AccountsFile, ActiveLicense, Session, StoredLicense } from "./types";
 
@@ -172,6 +172,16 @@ async function main(): Promise<void> {
   const file = await loadAccountsFile(env.ACCOUNTS_FILE);
 
   console.log(`Accounts: ${file.accounts.length} | Edition: ${env.TARGET_EDITION} | Threshold: ${env.REFRESH_THRESHOLD_DAYS}d`);
+
+  // 0. Pre-check: verify the local API key works before doing anything else
+  if (env.DOCMOST_API_KEY) {
+    console.log("\n--- Pre-check: validating DOCMOST_API_KEY ---");
+    if (env.DOCMOST_LOCAL_URL) {
+      await checkApiKey(env.DOCMOST_LOCAL_URL, env.DOCMOST_API_KEY);
+    } else {
+      console.warn("  DOCMOST_API_KEY is set but DOCMOST_LOCAL_URL is not — skipping API key check");
+    }
+  }
 
   // 1. Sync all account licenses from remote
   await syncLicenses(file, env.TARGET_EDITION);
